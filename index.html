@@ -50,13 +50,12 @@
         <div class="row">
           <div class="col-6">
             <div class="clearfix weather-temperature">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                alt="Clear"
-                id="icon"
-              />
+              <img src="" alt="Clear" id="icon" class="float-left" />
               <strong id="temperature"></strong
-              ><span class="units">°C | <a href="#"> °F</a></span>
+              ><span class="units"
+                ><a href="#" id="celsius-link" class="active">°C</a> |
+                <a href="#" id="fahrenheit-link" class="active"> °F</a></span
+              >
             </div>
           </div>
           <div class="col-6">
@@ -68,7 +67,7 @@
         </div>
       </div>
       <small>
-        This project was coded by Cammie Duplessis and is
+        This project was coded by Camille Duplessis and is
         <span id="text">
           <a href="https://github.com/Cam-mie/TheWapp"
             >open-sourced on GitHub</a
