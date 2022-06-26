@@ -17,14 +17,33 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app-wrapper"></div>
-      <div class="weather-app">
-        <div class="location">
-          <h1 id="city"></h1>
-          <ul>
-            <li id="date"></li>
-            <li id="description"></li>
-          </ul>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="location">
+            <h1 id="city"></h1>
+            <ul>
+              <li id="date"></li>
+              <li id="description"></li>
+            </ul>
+          </div>
         </div>
         <div class="row">
           <div class="col-6">
@@ -48,8 +67,12 @@
       </div>
       <small>
         This project was coded by Cammie Duplessis and is
-        <a href="https://github.com/Cam-mie/TheWapp">open-sourced on GitHub</a>
-        and hosted on Netlify
+        <span id="text">
+          <a href="https://github.com/Cam-mie/TheWapp"
+            >open-sourced on GitHub</a
+          >
+          and hosted on Netlify</span
+        >
       </small>
     </div>
     <script src="src/app.js"></script>
